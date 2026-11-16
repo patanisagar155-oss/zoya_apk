@@ -12,10 +12,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+      - uses: gradle/actions/setup-gradle@v3
       - run: npm install --legacy-peer-deps
       - run: npm run build
       - run: npx cap sync android
-      - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
+      - run: cd android && gradle assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: zoya-apk
