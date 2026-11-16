@@ -12,7 +12,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - run: npm install
+      - run: npm install --legacy-peer-deps
       - run: npm run build
       - run: npx cap sync android
       - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
