@@ -1,0 +1,6 @@
+{
+  "name": "ZOYA JARVIS AI",
+  "description": "Personal AI companion and voice assistant for Sagar with Gemini intelligence, multilingual Hindi/Gujarati/English speech, persistent memory, and native Capacitor Android integration.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

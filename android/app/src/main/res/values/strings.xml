@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZOYA JARVIS AI</string>
+    <string name="title_activity_main">ZOYA JARVIS AI</string>
+    <string name="package_name">com.sagar.zoya.jarvis</string>
+    <string name="custom_url_scheme">com.sagar.zoya.jarvis</string>
+    <string name="accessibility_service_description">Allows ZOYA JARVIS AI to assist Sagar with explicit hands-free navigation actions (Home, Back, Recents) only when explicitly enabled by the user.</string>
+</resources>

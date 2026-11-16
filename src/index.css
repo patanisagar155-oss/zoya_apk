@@ -1,0 +1,134 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Chakra Petch', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #000000;
+    color: #F8FAFC;
+    letter-spacing: 0.01em;
+    overscroll-behavior-y: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+@keyframes reactor-spin-cw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reactor-spin-ccw {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes reactor-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.72;
+  }
+  50% {
+    transform: scale(1.07);
+    opacity: 1;
+  }
+}
+
+@keyframes particle-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate3d(0, -10px, 0) scale(1.25);
+    opacity: 0.8;
+  }
+}
+
+.animate-reactor-cw {
+  animation: reactor-spin-cw 22s linear infinite;
+}
+
+.animate-reactor-cw-fast {
+  animation: reactor-spin-cw 8s linear infinite;
+}
+
+.animate-reactor-ccw {
+  animation: reactor-spin-ccw 16s linear infinite;
+}
+
+.animate-reactor-ccw-slow {
+  animation: reactor-spin-ccw 32s linear infinite;
+}
+
+.animate-reactor-pulse {
+  animation: reactor-pulse 3.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.animate-particle-float {
+  animation: particle-float 4.5s ease-in-out infinite;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Crimson dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(220, 38, 38, 0.28);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 68, 68, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-reactor-cw,
+  .animate-reactor-cw-fast,
+  .animate-reactor-ccw,
+  .animate-reactor-ccw-slow,
+  .animate-reactor-pulse,
+  .animate-particle-float {
+    animation: none !important;
+  }
+}

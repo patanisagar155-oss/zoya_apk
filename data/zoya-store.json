@@ -1,0 +1,50 @@
+{
+  "conversations": [
+    {
+      "id": "838a3093-7978-4ecc-b0c6-de906f2358e6",
+      "title": "Welcome Session",
+      "createdAt": "2026-11-16T13:27:56.382Z",
+      "updatedAt": "2026-11-16T13:27:56.382Z",
+      "messages": [
+        {
+          "id": "20c382ca-b239-4b19-b2e5-4e3b5c5894ec",
+          "role": "assistant",
+          "content": "Welcome Sagar ❤️\nMain ZOYA hoon.\nBatao, aaj main tumhari kya madad kar sakti hoon?",
+          "timestamp": "2026-11-16T13:27:56.382Z",
+          "language": "hi"
+        }
+      ]
+    }
+  ],
+  "memories": [
+    {
+      "id": "546a4a07-4ed4-414b-b562-00d8244413ca",
+      "fact": "User's preferred name is Sagar.",
+      "category": "identity",
+      "createdAt": "2026-11-16T14:16:33.032Z",
+      "source": "auto"
+    },
+    {
+      "id": "dca6964f-571f-4296-bdfd-df09d1e91ba5",
+      "fact": "Owner name is Sagar. He prefers warm, natural conversation in Hindi, Gujarati, and English.",
+      "category": "personal",
+      "createdAt": "2026-11-16T13:27:56.382Z",
+      "source": "manual"
+    }
+  ],
+  "settings": {
+    "ownerName": "Sagar",
+    "ownerNameConfirmed": true,
+    "preferredLanguage": "auto",
+    "warmthLevel": "warm",
+    "voiceEngine": "gemini",
+    "voicePersona": "Sulafat",
+    "speechRate": 1,
+    "speechVolume": 0.9,
+    "autoSpeak": true,
+    "continuousMode": false,
+    "confirmSensitiveActions": true,
+    "accessibilityConsentGranted": false,
+    "webSearchEnabled": true
+  }
+}
